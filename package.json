@@ -4,7 +4,8 @@
   "description": "OPA Property Search",
   "main": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "./node_modules/grunt-cli/bin/grunt default"
   },
   "repository": {
     "type": "git",
@@ -16,6 +17,10 @@
   ],
   "author": "City of Philadelphia",
   "devDependencies": {
+  },
+  "dependencies": {
+    "express": "~3.5.1",
+    "grunt-cli": "~0.1.9",
     "grunt": "~0.4.1",
     "grunt-requirejs": "~0.4.0",
     "grunt-contrib-requirejs": "~0.4.1",
